@@ -1,27 +1,6 @@
-package com.hs.datastructure;
+package com.hs.list;
 
 import java.util.Optional;
-
-class ListNode{
-    private int num;
-    private ListNode front = null;
-
-    public ListNode(int num) {
-        this.num = num;
-    }
-
-    public void setFront(ListNode front) {
-        this.front = front;
-    }
-
-    public int getNum() {
-        return num;
-    }
-
-    public ListNode getFront() {
-        return front;
-    }
-}
 
 interface LinkedList{
     Optional<ListNode> add(ListNode head, ListNode nodeToAdd, int position);
@@ -30,7 +9,6 @@ interface LinkedList{
     void print();
     ListNode getHead();
 }
-
 
 class LinkedListImpl implements LinkedList{
     private ListNode head = null;
